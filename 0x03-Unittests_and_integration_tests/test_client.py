@@ -82,6 +82,10 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         self.assertEqual(test_client.public_repos(),
                          [repo for repo in fixtures.TEST_PAYLOAD[0][2]])
 
+    def test_public_repos_with_license(self):
+        """ Test public repos with license """
+        pass
+
     @classmethod
     def tearDownClass(cls):
         """Teardown method for class"""
